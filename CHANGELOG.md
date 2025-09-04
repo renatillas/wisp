@@ -1,12 +1,14 @@
 # Changelog
 
+## v2.1.0 - Unreleased
+
+- The `simulate` module gains the `mutipart_form`, `upload_file` and
+  `upload_text_file` functions.
+
 ## v2.0.0-rc2 - 2025-07-
 
 - The `unprocessable_entity` function has renamed to `unprocessable_content`.
 - The `entity_too_large` function has renamed to `content_too_large`.
-- The `multipart_body` function has been added to the `simulate` module.
-- The `upload_file` function has been added to the `simulate` module.
-- The `upload_text_file` function has been added to the `simulate` module.
 
 ## v2.0.0-rc1 - 2025-07-24
 
