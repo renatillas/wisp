@@ -5,8 +5,8 @@
 - The `unprocessable_entity` function has renamed to `unprocessable_content`.
 - The `entity_too_large` function has renamed to `content_too_large`.
 - The `multipart_body` function has been added to the `simulate` module.
-- The `uploaded_file` function has been added to the `simulate` module.
-- The `uploaded_text_file` function has been added to the `simulate` module.
+- The `upload_file` function has been added to the `simulate` module.
+- The `upload_text_file` function has been added to the `simulate` module.
 
 ## v2.0.0-rc1 - 2025-07-24
 
