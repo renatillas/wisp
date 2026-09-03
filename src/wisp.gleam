@@ -1195,7 +1195,7 @@ fn fn_with_bad_request_error(
 }
 
 fn multipart_content_disposition(
-  headers: List(http.Header),
+  headers: List(#(String, String)),
 ) -> Result(#(String, Option(String)), Response) {
   {
     use header <- result.try(list.key_find(headers, "content-disposition"))
@@ -1227,7 +1227,7 @@ fn multipart_headers(
   parse: fn(BitArray) -> Result(http.MultipartHeaders, Response),
   chunk_size: Int,
   quotas: Quotas,
-) -> Result(#(List(http.Header), BufferedReader, Quotas), Response) {
+) -> Result(#(List(#(String, String)), BufferedReader, Quotas), Response) {
   use #(chunk, reader) <- result.try(read_chunk(reader, chunk_size))
   use headers <- result.try(parse(chunk))
 
